@@ -5,7 +5,7 @@ Pyretic is a Python platform that allows modular SDN (software-defined network) 
 
 rulenum, source MAC, destination MAC, source IP, destination IP, source port, destination port, protocol
 
-`firewall.py` then parses the output from `firewall_policy.py` into a list of dictionaries and creates the appropriate match/pyretic actions. `firewall-config.pol' is the configuration file that will be used in this firewall simulation, which lists the following rules:
+`firewall.py` then parses the output from `firewall_policy.py` into a list of dictionaries and creates the appropriate match/pyretic actions. `firewall-config.pol` is the configuration file that will be used in this firewall simulation, which lists the following rules:
 
 * Prohibit all systems from accessing a PPTP server running on server2.
 * Prohibit all devices from connecting to a SSH on hosts e1, e2, and e3.
@@ -15,7 +15,7 @@ rulenum, source MAC, destination MAC, source IP, destination IP, source port, de
 * Restrict host mobile1 from communicating to hosts e1, e2, and e3 through TCP and UDP.
 
 ## Environment/Packages
-Ubuntu 14.04 LTS
-[Pyretic](https://github.com/frenetic-lang/pyretic)
-mininet (for network simulations)
-Wireshark (to analyze network traffic)
+* Ubuntu 14.04 LTS
+* [Pyretic](https://github.com/frenetic-lang/pyretic)
+* mininet (for network simulations)
+* Wireshark (to analyze network traffic)
