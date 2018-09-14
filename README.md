@@ -14,6 +14,14 @@ rulenum, source MAC, destination MAC, source IP, destination IP, source port, de
 * Prohibit all traffic destined to TCP ports 9950-9952 on host e3 from host e1.
 * Restrict host mobile1 from communicating to hosts e1, e2, and e3 through TCP and UDP.
 
+## How to run
+1. Run `python pyretic.py pyretic.modules.pyretic_switch`
+2. Run `./run-firewall.sh firewall-config.pol`
+3. Open a new terminal and run `sudo python firewall-topo.py`
+4. Open client and server terminals: `<hostname1> xterm &`, `<hostname2> xterm &`, etc.
+5. Start the server in the designated server terminal (i.e. hostname1): `python test-tcp-server.py <IP address> <port number>`
+6. Start the client in the designated client terminal (i.e. hostname2): `python test-tcp-client.py <IP address> <port number>`
+
 ## Environment/Packages
 * Ubuntu 14.04 LTS
 * [Pyretic](https://github.com/frenetic-lang/pyretic)
