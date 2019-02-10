@@ -1,11 +1,5 @@
 #!/usr/bin/python
 
-# CS 6250 Summer 2018 - Project 4 - SDN Firewall
-# 
-# This script implements the firewall you create through the config file
-# and the firewall-policy.py file.  You should not need to edit this 
-# configuration file.  You do not submit this with your final submission.
-
 from pyretic.lib.corelib import *
 from pyretic.lib.std import *
 from pyretic.lib.query import packets
