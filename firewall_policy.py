@@ -1,5 +1,4 @@
 #!/usr/bin/python
-# CS 6250 Summer 2018 - Project 4 - SDN Firewall
 
 from pyretic.lib.corelib import *
 from pyretic.lib.std import *
